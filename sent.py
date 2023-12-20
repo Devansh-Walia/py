@@ -47,7 +47,7 @@ def analyze_sentiment():
             'overall_sentiment': 'Positive' if all(result['label'] == 'POSITIVE' for result in results) else 'Mixed/Negative',
         }
 
-        return jsonify(r`eport)
+        return jsonify(report)
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
